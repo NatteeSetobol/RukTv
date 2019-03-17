@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05011AD318DD608400F4E39D /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 05011AD218DD608400F4E39D /* Toast.m */; };
+		0505D6C218DE5CAB00E19EF5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0505D6C118DE5CAB00E19EF5 /* CoreVideo.framework */; };
+		0505D6C418DE5CB200E19EF5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0505D6C318DE5CB200E19EF5 /* CoreAudio.framework */; };
+		0505D6C618DE5D3100E19EF5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0505D6C518DE5D3100E19EF5 /* CoreMedia.framework */; };
+		0505D6C818DE5D6700E19EF5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0505D6C718DE5D6700E19EF5 /* MediaPlayer.framework */; };
+		052C418918DBE6EC009D609E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052C418818DBE6EC009D609E /* Foundation.framework */; };
+		052C418B18DBE6EC009D609E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052C418A18DBE6EC009D609E /* CoreGraphics.framework */; };
+		052C418D18DBE6EC009D609E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052C418C18DBE6EC009D609E /* UIKit.framework */; };
+		052C419318DBE6EC009D609E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 052C419118DBE6EC009D609E /* InfoPlist.strings */; };
+		052C419518DBE6EC009D609E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C419418DBE6EC009D609E /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		052C419918DBE6EC009D609E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C419818DBE6EC009D609E /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		052C419C18DBE6EC009D609E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052C419A18DBE6EC009D609E /* Main_iPhone.storyboard */; };
+		052C419F18DBE6EC009D609E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052C419D18DBE6EC009D609E /* Main_iPad.storyboard */; };
+		052C41A218DBE6EC009D609E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C41A118DBE6EC009D609E /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		052C41A418DBE6EC009D609E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052C41A318DBE6EC009D609E /* Images.xcassets */; };
+		052C41AB18DBE6EC009D609E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052C41AA18DBE6EC009D609E /* XCTest.framework */; };
+		052C41AC18DBE6EC009D609E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052C418818DBE6EC009D609E /* Foundation.framework */; };
+		052C41AD18DBE6EC009D609E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052C418C18DBE6EC009D609E /* UIKit.framework */; };
+		052C41B518DBE6EC009D609E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 052C41B318DBE6EC009D609E /* InfoPlist.strings */; };
+		052C41B718DBE6EC009D609E /* Ruk_TVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C41B618DBE6EC009D609E /* Ruk_TVTests.m */; };
+		052C41C218DC14DD009D609E /* OHURLLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C41C118DC14DD009D609E /* OHURLLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		052F6C6A18E7ED7F00DC30DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C6918E7ED7F00DC30DB /* AVFoundation.framework */; };
+		052F6C6C18E7ED8A00DC30DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C6B18E7ED8A00DC30DB /* AudioToolbox.framework */; };
+		052F6C6E18E7EDBE00DC30DB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C6D18E7EDBE00DC30DB /* OpenGLES.framework */; };
+		052F6C7018E7EDCB00DC30DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C6F18E7EDCB00DC30DB /* QuartzCore.framework */; };
+		052F6C7218E7EDFD00DC30DB /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C7118E7EDFD00DC30DB /* libbz2.dylib */; };
+		052F6C7418E7EE0A00DC30DB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C7318E7EE0A00DC30DB /* libz.dylib */; };
+		052F6C7618E7EE2D00DC30DB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C7518E7EE2D00DC30DB /* libstdc++.dylib */; };
+		052F6C7818E7EE4B00DC30DB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C7718E7EE4B00DC30DB /* libiconv.dylib */; };
+		052F6C8918E7EE8200DC30DB /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 052F6C7A18E7EE8200DC30DB /* CHANGELOG.md */; };
+		052F6C8A18E7EE8200DC30DB /* libffmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C8518E7EE8200DC30DB /* libffmpeg.a */; };
+		052F6C8B18E7EE8200DC30DB /* libopenssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C8618E7EE8200DC30DB /* libopenssl.a */; };
+		052F6C8C18E7EE8200DC30DB /* libVitamio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 052F6C8718E7EE8200DC30DB /* libVitamio.a */; };
+		052F6C8D18E7EE8200DC30DB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 052F6C8818E7EE8200DC30DB /* LICENSE */; };
+		C747B79E18ECDD53000FA78C /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = C747B79D18ECDD53000FA78C /* Database.m */; };
+		C747B7A018ECDE21000FA78C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C747B79F18ECDE21000FA78C /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		052C41AE18DBE6EC009D609E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052C417D18DBE6EC009D609E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C418418DBE6EC009D609E;
+			remoteInfo = "Ruk-TV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05011AD218DD608400F4E39D /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		05011AD418DD609100F4E39D /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		0505D6C118DE5CAB00E19EF5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0505D6C318DE5CB200E19EF5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0505D6C518DE5D3100E19EF5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0505D6C718DE5D6700E19EF5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		052C418518DBE6EC009D609E /* Ruk-TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruk-TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C418818DBE6EC009D609E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		052C418A18DBE6EC009D609E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		052C418C18DBE6EC009D609E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		052C419018DBE6EC009D609E /* Ruk-TV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruk-TV-Info.plist"; sourceTree = "<group>"; };
+		052C419218DBE6EC009D609E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		052C419418DBE6EC009D609E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		052C419618DBE6EC009D609E /* Ruk-TV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruk-TV-Prefix.pch"; sourceTree = "<group>"; };
+		052C419718DBE6EC009D609E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		052C419818DBE6EC009D609E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		052C419B18DBE6EC009D609E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		052C419E18DBE6EC009D609E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		052C41A018DBE6EC009D609E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		052C41A118DBE6EC009D609E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		052C41A318DBE6EC009D609E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		052C41A918DBE6EC009D609E /* Ruk-TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruk-TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C41AA18DBE6EC009D609E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		052C41B218DBE6EC009D609E /* Ruk-TVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruk-TVTests-Info.plist"; sourceTree = "<group>"; };
+		052C41B418DBE6EC009D609E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		052C41B618DBE6EC009D609E /* Ruk_TVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ruk_TVTests.m; sourceTree = "<group>"; };
+		052C41C018DC14CD009D609E /* OHURLLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHURLLoader.h; sourceTree = "<group>"; };
+		052C41C118DC14DD009D609E /* OHURLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHURLLoader.m; sourceTree = "<group>"; };
+		052F6C6918E7ED7F00DC30DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		052F6C6B18E7ED8A00DC30DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		052F6C6D18E7EDBE00DC30DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		052F6C6F18E7EDCB00DC30DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		052F6C7118E7EDFD00DC30DB /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		052F6C7318E7EE0A00DC30DB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		052F6C7518E7EE2D00DC30DB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		052F6C7718E7EE4B00DC30DB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		052F6C7A18E7EE8200DC30DB /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		052F6C7D18E7EE8200DC30DB /* VDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDefines.h; sourceTree = "<group>"; };
+		052F6C7E18E7EE8200DC30DB /* Vitamio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vitamio.h; sourceTree = "<group>"; };
+		052F6C7F18E7EE8200DC30DB /* VMediaExtracter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaExtracter.h; sourceTree = "<group>"; };
+		052F6C8018E7EE8200DC30DB /* VMediaExtracterDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaExtracterDef.h; sourceTree = "<group>"; };
+		052F6C8118E7EE8200DC30DB /* VMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaPlayer.h; sourceTree = "<group>"; };
+		052F6C8218E7EE8200DC30DB /* VMediaPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMediaPlayerDelegate.h; sourceTree = "<group>"; };
+		052F6C8318E7EE8200DC30DB /* VPlayerManageDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPlayerManageDef.h; sourceTree = "<group>"; };
+		052F6C8418E7EE8200DC30DB /* VSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSingleton.h; sourceTree = "<group>"; };
+		052F6C8518E7EE8200DC30DB /* libffmpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffmpeg.a; sourceTree = "<group>"; };
+		052F6C8618E7EE8200DC30DB /* libopenssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopenssl.a; sourceTree = "<group>"; };
+		052F6C8718E7EE8200DC30DB /* libVitamio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVitamio.a; sourceTree = "<group>"; };
+		052F6C8818E7EE8200DC30DB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C747B79C18ECDD4C000FA78C /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		C747B79D18ECDD53000FA78C /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		C747B79F18ECDE21000FA78C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		052C418218DBE6EC009D609E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C747B7A018ECDE21000FA78C /* libsqlite3.dylib in Frameworks */,
+				052F6C7818E7EE4B00DC30DB /* libiconv.dylib in Frameworks */,
+				052F6C8B18E7EE8200DC30DB /* libopenssl.a in Frameworks */,
+				052F6C7618E7EE2D00DC30DB /* libstdc++.dylib in Frameworks */,
+				052F6C7418E7EE0A00DC30DB /* libz.dylib in Frameworks */,
+				052F6C7218E7EDFD00DC30DB /* libbz2.dylib in Frameworks */,
+				052F6C8C18E7EE8200DC30DB /* libVitamio.a in Frameworks */,
+				052C418D18DBE6EC009D609E /* UIKit.framework in Frameworks */,
+				052F6C7018E7EDCB00DC30DB /* QuartzCore.framework in Frameworks */,
+				052F6C8A18E7EE8200DC30DB /* libffmpeg.a in Frameworks */,
+				052F6C6E18E7EDBE00DC30DB /* OpenGLES.framework in Frameworks */,
+				0505D6C818DE5D6700E19EF5 /* MediaPlayer.framework in Frameworks */,
+				0505D6C218DE5CAB00E19EF5 /* CoreVideo.framework in Frameworks */,
+				0505D6C618DE5D3100E19EF5 /* CoreMedia.framework in Frameworks */,
+				052F6C6C18E7ED8A00DC30DB /* AudioToolbox.framework in Frameworks */,
+				052F6C6A18E7ED7F00DC30DB /* AVFoundation.framework in Frameworks */,
+				0505D6C418DE5CB200E19EF5 /* CoreAudio.framework in Frameworks */,
+				052C418B18DBE6EC009D609E /* CoreGraphics.framework in Frameworks */,
+				052C418918DBE6EC009D609E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C41A618DBE6EC009D609E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C41AB18DBE6EC009D609E /* XCTest.framework in Frameworks */,
+				052C41AD18DBE6EC009D609E /* UIKit.framework in Frameworks */,
+				052C41AC18DBE6EC009D609E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		052C417C18DBE6EC009D609E = {
+			isa = PBXGroup;
+			children = (
+				052C418E18DBE6EC009D609E /* Ruk-TV */,
+				052C41B018DBE6EC009D609E /* Ruk-TVTests */,
+				052C418718DBE6EC009D609E /* Frameworks */,
+				052C418618DBE6EC009D609E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		052C418618DBE6EC009D609E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				052C418518DBE6EC009D609E /* Ruk-TV.app */,
+				052C41A918DBE6EC009D609E /* Ruk-TVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		052C418718DBE6EC009D609E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C747B79F18ECDE21000FA78C /* libsqlite3.dylib */,
+				052F6C7718E7EE4B00DC30DB /* libiconv.dylib */,
+				052F6C7518E7EE2D00DC30DB /* libstdc++.dylib */,
+				052F6C7318E7EE0A00DC30DB /* libz.dylib */,
+				052F6C7118E7EDFD00DC30DB /* libbz2.dylib */,
+				052F6C6F18E7EDCB00DC30DB /* QuartzCore.framework */,
+				052F6C6D18E7EDBE00DC30DB /* OpenGLES.framework */,
+				052F6C6B18E7ED8A00DC30DB /* AudioToolbox.framework */,
+				052F6C6918E7ED7F00DC30DB /* AVFoundation.framework */,
+				0505D6C718DE5D6700E19EF5 /* MediaPlayer.framework */,
+				0505D6C518DE5D3100E19EF5 /* CoreMedia.framework */,
+				0505D6C318DE5CB200E19EF5 /* CoreAudio.framework */,
+				0505D6C118DE5CAB00E19EF5 /* CoreVideo.framework */,
+				052C418818DBE6EC009D609E /* Foundation.framework */,
+				052C418A18DBE6EC009D609E /* CoreGraphics.framework */,
+				052C418C18DBE6EC009D609E /* UIKit.framework */,
+				052C41AA18DBE6EC009D609E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		052C418E18DBE6EC009D609E /* Ruk-TV */ = {
+			isa = PBXGroup;
+			children = (
+				C747B79C18ECDD4C000FA78C /* Database.h */,
+				C747B79D18ECDD53000FA78C /* Database.m */,
+				052F6C7918E7EE8200DC30DB /* Vitamio */,
+				05011AD418DD609100F4E39D /* Toast.h */,
+				05011AD218DD608400F4E39D /* Toast.m */,
+				052C41C118DC14DD009D609E /* OHURLLoader.m */,
+				052C41C018DC14CD009D609E /* OHURLLoader.h */,
+				052C419718DBE6EC009D609E /* AppDelegate.h */,
+				052C419818DBE6EC009D609E /* AppDelegate.m */,
+				052C419A18DBE6EC009D609E /* Main_iPhone.storyboard */,
+				052C419D18DBE6EC009D609E /* Main_iPad.storyboard */,
+				052C41A018DBE6EC009D609E /* ViewController.h */,
+				052C41A118DBE6EC009D609E /* ViewController.m */,
+				052C41A318DBE6EC009D609E /* Images.xcassets */,
+				052C418F18DBE6EC009D609E /* Supporting Files */,
+			);
+			path = "Ruk-TV";
+			sourceTree = "<group>";
+		};
+		052C418F18DBE6EC009D609E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				052C419018DBE6EC009D609E /* Ruk-TV-Info.plist */,
+				052C419118DBE6EC009D609E /* InfoPlist.strings */,
+				052C419418DBE6EC009D609E /* main.m */,
+				052C419618DBE6EC009D609E /* Ruk-TV-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		052C41B018DBE6EC009D609E /* Ruk-TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				052C41B618DBE6EC009D609E /* Ruk_TVTests.m */,
+				052C41B118DBE6EC009D609E /* Supporting Files */,
+			);
+			path = "Ruk-TVTests";
+			sourceTree = "<group>";
+		};
+		052C41B118DBE6EC009D609E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				052C41B218DBE6EC009D609E /* Ruk-TVTests-Info.plist */,
+				052C41B318DBE6EC009D609E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		052F6C7918E7EE8200DC30DB /* Vitamio */ = {
+			isa = PBXGroup;
+			children = (
+				052F6C7A18E7EE8200DC30DB /* CHANGELOG.md */,
+				052F6C7B18E7EE8200DC30DB /* include */,
+				052F6C8518E7EE8200DC30DB /* libffmpeg.a */,
+				052F6C8618E7EE8200DC30DB /* libopenssl.a */,
+				052F6C8718E7EE8200DC30DB /* libVitamio.a */,
+				052F6C8818E7EE8200DC30DB /* LICENSE */,
+			);
+			path = Vitamio;
+			sourceTree = "<group>";
+		};
+		052F6C7B18E7EE8200DC30DB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				052F6C7C18E7EE8200DC30DB /* Vitamio */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		052F6C7C18E7EE8200DC30DB /* Vitamio */ = {
+			isa = PBXGroup;
+			children = (
+				052F6C7D18E7EE8200DC30DB /* VDefines.h */,
+				052F6C7E18E7EE8200DC30DB /* Vitamio.h */,
+				052F6C7F18E7EE8200DC30DB /* VMediaExtracter.h */,
+				052F6C8018E7EE8200DC30DB /* VMediaExtracterDef.h */,
+				052F6C8118E7EE8200DC30DB /* VMediaPlayer.h */,
+				052F6C8218E7EE8200DC30DB /* VMediaPlayerDelegate.h */,
+				052F6C8318E7EE8200DC30DB /* VPlayerManageDef.h */,
+				052F6C8418E7EE8200DC30DB /* VSingleton.h */,
+			);
+			path = Vitamio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		052C418418DBE6EC009D609E /* Ruk-TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C41BA18DBE6EC009D609E /* Build configuration list for PBXNativeTarget "Ruk-TV" */;
+			buildPhases = (
+				052C418118DBE6EC009D609E /* Sources */,
+				052C418218DBE6EC009D609E /* Frameworks */,
+				052C418318DBE6EC009D609E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ruk-TV";
+			productName = "Ruk-TV";
+			productReference = 052C418518DBE6EC009D609E /* Ruk-TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		052C41A818DBE6EC009D609E /* Ruk-TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C41BD18DBE6EC009D609E /* Build configuration list for PBXNativeTarget "Ruk-TVTests" */;
+			buildPhases = (
+				052C41A518DBE6EC009D609E /* Sources */,
+				052C41A618DBE6EC009D609E /* Frameworks */,
+				052C41A718DBE6EC009D609E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C41AF18DBE6EC009D609E /* PBXTargetDependency */,
+			);
+			name = "Ruk-TVTests";
+			productName = "Ruk-TVTests";
+			productReference = 052C41A918DBE6EC009D609E /* Ruk-TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		052C417D18DBE6EC009D609E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = nomication;
+				TargetAttributes = {
+					052C41A818DBE6EC009D609E = {
+						TestTargetID = 052C418418DBE6EC009D609E;
+					};
+				};
+			};
+			buildConfigurationList = 052C418018DBE6EC009D609E /* Build configuration list for PBXProject "Ruk-TV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 052C417C18DBE6EC009D609E;
+			productRefGroup = 052C418618DBE6EC009D609E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				052C418418DBE6EC009D609E /* Ruk-TV */,
+				052C41A818DBE6EC009D609E /* Ruk-TVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		052C418318DBE6EC009D609E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052F6C8D18E7EE8200DC30DB /* LICENSE in Resources */,
+				052C419F18DBE6EC009D609E /* Main_iPad.storyboard in Resources */,
+				052F6C8918E7EE8200DC30DB /* CHANGELOG.md in Resources */,
+				052C41A418DBE6EC009D609E /* Images.xcassets in Resources */,
+				052C419C18DBE6EC009D609E /* Main_iPhone.storyboard in Resources */,
+				052C419318DBE6EC009D609E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C41A718DBE6EC009D609E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C41B518DBE6EC009D609E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		052C418118DBE6EC009D609E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05011AD318DD608400F4E39D /* Toast.m in Sources */,
+				052C41A218DBE6EC009D609E /* ViewController.m in Sources */,
+				C747B79E18ECDD53000FA78C /* Database.m in Sources */,
+				052C41C218DC14DD009D609E /* OHURLLoader.m in Sources */,
+				052C419918DBE6EC009D609E /* AppDelegate.m in Sources */,
+				052C419518DBE6EC009D609E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C41A518DBE6EC009D609E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C41B718DBE6EC009D609E /* Ruk_TVTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		052C41AF18DBE6EC009D609E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C418418DBE6EC009D609E /* Ruk-TV */;
+			targetProxy = 052C41AE18DBE6EC009D609E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		052C419118DBE6EC009D609E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C419218DBE6EC009D609E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		052C419A18DBE6EC009D609E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C419B18DBE6EC009D609E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		052C419D18DBE6EC009D609E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C419E18DBE6EC009D609E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		052C41B318DBE6EC009D609E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C41B418DBE6EC009D609E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		052C41B818DBE6EC009D609E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Arthur Chang (688ATGQC7H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arthur Chang (688ATGQC7H)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "4650075C-4749-4039-8837-CD36C0D28580";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		052C41B918DBE6EC009D609E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Arthur Chang (688ATGQC7H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arthur Chang (688ATGQC7H)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "4650075C-4749-4039-8837-CD36C0D28580";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		052C41BB18DBE6EC009D609E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruk-TV/Ruk-TV-Prefix.pch";
+				INFOPLIST_FILE = "Ruk-TV/Ruk-TV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ruk-TV/Vitamio",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		052C41BC18DBE6EC009D609E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruk-TV/Ruk-TV-Prefix.pch";
+				INFOPLIST_FILE = "Ruk-TV/Ruk-TV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ruk-TV/Vitamio",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		052C41BE18DBE6EC009D609E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ruk-TV.app/Ruk-TV";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruk-TV/Ruk-TV-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ruk-TVTests/Ruk-TVTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		052C41BF18DBE6EC009D609E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ruk-TV.app/Ruk-TV";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruk-TV/Ruk-TV-Prefix.pch";
+				INFOPLIST_FILE = "Ruk-TVTests/Ruk-TVTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		052C418018DBE6EC009D609E /* Build configuration list for PBXProject "Ruk-TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C41B818DBE6EC009D609E /* Debug */,
+				052C41B918DBE6EC009D609E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C41BA18DBE6EC009D609E /* Build configuration list for PBXNativeTarget "Ruk-TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C41BB18DBE6EC009D609E /* Debug */,
+				052C41BC18DBE6EC009D609E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C41BD18DBE6EC009D609E /* Build configuration list for PBXNativeTarget "Ruk-TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C41BE18DBE6EC009D609E /* Debug */,
+				052C41BF18DBE6EC009D609E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 052C417D18DBE6EC009D609E /* Project object */;
+}
